@@ -15,7 +15,7 @@ const myTable = `
 import fs from "fs";
 
 export default function Home() {
-  const data = fs.readFileSync("./example.mdx", "utf8");
+  const data = fs.readFileSync("./example.md", "utf8");
   return (
     <main className={styles.main}>
       <ReactMarkdown remarkPlugins={[remarkGfm]} children={data} />
